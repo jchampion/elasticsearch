@@ -46,19 +46,18 @@ Response:
       "buckets" : {
         "errors" : {
           "doc_count" : 34,
-            "monthly" : {
-              "buckets" : [
-                ... // the histogram monthly breakdown
-              ]
-            }
-          },
-          "warnings" : {
-            "doc_count" : 439,
-            "monthly" : {
-              "buckets" : [
-                 ... // the histogram monthly breakdown
-              ]
-            }
+          "monthly" : {
+            "buckets" : [
+              ... // the histogram monthly breakdown
+            ]
+          }
+        },
+        "warnings" : {
+          "doc_count" : 439,
+          "monthly" : {
+            "buckets" : [
+               ... // the histogram monthly breakdown
+            ]
           }
         }
       }
@@ -108,7 +107,7 @@ request.  The response for this example would be:
         {
           "doc_count" : 34,
           "monthly" : {
-            "buckets : [
+            "buckets" : [
               ... // the histogram monthly breakdown
             ]
           }
@@ -116,7 +115,7 @@ request.  The response for this example would be:
         {
           "doc_count" : 439,
           "monthly" : {
-            "buckets : [
+            "buckets" : [
               ... // the histogram monthly breakdown
             ]
           }
@@ -176,27 +175,26 @@ The response would be something like the following:
       "buckets" : {
         "errors" : {
           "doc_count" : 34,
-            "monthly" : {
-              "buckets" : [
-                ... // the histogram monthly breakdown
-              ]
-            }
-          },
-          "warnings" : {
-            "doc_count" : 439,
-            "monthly" : {
-              "buckets" : [
-                 ... // the histogram monthly breakdown
-              ]
-            }
-          },
-          "other_messages" : {
-            "doc_count" : 237,
-            "monthly" : {
-              "buckets" : [
-                 ... // the histogram monthly breakdown
-              ]
-            }
+          "monthly" : {
+            "buckets" : [
+              ... // the histogram monthly breakdown
+            ]
+          }
+        },
+        "warnings" : {
+          "doc_count" : 439,
+          "monthly" : {
+            "buckets" : [
+               ... // the histogram monthly breakdown
+            ]
+          }
+        },
+        "other_messages" : {
+          "doc_count" : 237,
+          "monthly" : {
+            "buckets" : [
+               ... // the histogram monthly breakdown
+            ]
           }
         }
       }
